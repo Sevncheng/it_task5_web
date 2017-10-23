@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <!-- 定义一个基础模板页 -->
+    <definition name="template_base" template="/WEB-INF/template.jsp" ></definition>
+    <!-- 继承基础模板页 -->
+    <definition name="*.page" extends="template_base" >
+            <put-attribute name="header" value="/header.jsp"  />
+            <put-attribute name="body" value="/task8-{1}.jsp" />
+            <put-attribute name="footer" value="/footer.jsp"  />
+    </definition>
+</tiles-definitions>
